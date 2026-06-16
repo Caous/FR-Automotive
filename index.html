@@ -47,13 +47,25 @@
         </div>
       </div>
 
-      <!-- Signature: esfera em órbita -->
+      <!-- Signature: globo 3D (InnovaSfera) -->
       <div class="orbit-stage" data-reveal data-delay="2" aria-hidden="true">
         <div class="orbit-glow"></div>
-        <div class="orbit-ring r3"><span class="sat"></span></div>
-        <div class="orbit-ring r2"><span class="sat"></span></div>
-        <div class="orbit-ring r1"><span class="sat"></span></div>
-        <div class="orbit-core"></div>
+        <div class="scene">
+          <div class="globe">
+            <span class="mer m1"></span><span class="mer m2"></span>
+            <span class="mer m3"></span><span class="mer m4"></span>
+            <span class="par p1"></span><span class="par p2"></span>
+            <span class="par p3"></span>
+            <span class="globe-core"></span>
+          </div>
+          <div class=" orbit-shell">
+            <span class="sat-3d"></span>
+          </div>
+        </div>
+        <!-- glass chips flutuantes -->
+        <div class="chip chip-a"><span class="dotmini"></span>NF-e autorizada</div>
+        <div class="chip chip-b"><b>R$ 18.430</b><small>faturado hoje</small></div>
+        <div class="chip chip-c">☁ Azure SQL · online</div>
       </div>
     </div>
   </header>
@@ -69,19 +81,19 @@
       </div>
       <div class="about-points">
         <div class="about-point" data-reveal data-delay="1">
-          <div class="ic">◐</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4L4 21l1.1-4A8.4 8.4 0 1 1 21 11.5Z"/></svg></div>
           <div><h4>Atendimento direto</h4><p>Você conversa com o desenvolvedor, não com um intermediário.</p></div>
         </div>
         <div class="about-point" data-reveal data-delay="2">
-          <div class="ic">⬡</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z"/><path d="M3 7.5v9L12 21V12M21 7.5v9L12 21"/></svg></div>
           <div><h4>Feito para o seu fluxo</h4><p>O sistema se adapta ao seu negócio, não o contrário.</p></div>
         </div>
         <div class="about-point" data-reveal data-delay="3">
-          <div class="ic">↺</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 9a9 9 0 0 0-15-3L3 9M3 9V4M3 9h5"/><path d="M3 15a9 9 0 0 0 15 3l3-3M21 15v5M21 15h-5"/></svg></div>
           <div><h4>Migração sem dor</h4><p>Seus dados atuais vão para a nuvem sem recomeçar do zero.</p></div>
         </div>
         <div class="about-point" data-reveal data-delay="4">
-          <div class="ic">⬢</div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 4 6v6c0 5 3.4 8.2 8 9.5 4.6-1.3 8-4.5 8-9.5V6l-8-3.5Z"/><path d="m9 12 2 2 4-4"/></svg></div>
           <div><h4>Você é dono do código</h4><p>Após a quitação, o sistema e os dados são 100% seus.</p></div>
         </div>
       </div>
@@ -125,18 +137,54 @@
         <p>Nada do que importa fica para trás. Os módulos marcados como <b>MVP</b> entram já no primeiro sistema no ar.</p>
       </div>
       <div class="mods">
-        <div class="mod" data-reveal data-delay="1"><span class="mic">📦</span><h4>Produtos & Estoque</h4><p>Cadastro, similares, kits, localização e alerta de estoque mínimo.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="1"><span class="mic">🧾</span><h4>NF-e</h4><p>Emissão de nota fiscal integrada à SEFAZ, com carta de correção.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="2"><span class="mic">🛒</span><h4>Pedidos & Vendas</h4><p>Orçamento, pedido, separação, faturamento e envio parcial.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="2"><span class="mic">💰</span><h4>Financeiro</h4><p>Contas a pagar e receber, fluxo de caixa e fechamento.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="3"><span class="mic">🚚</span><h4>Compras & Entradas</h4><p>Requisição, processo de compra e entrada de mercadoria.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="3"><span class="mic">🏦</span><h4>Boleto & Cheques</h4><p>Geração de boleto e controle de cheques recebidos e emitidos.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="4"><span class="mic">📊</span><h4>DRE Gerencial</h4><p>Resultado por período, agrupado pelo seu plano de contas.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="4"><span class="mic">🔐</span><h4>Usuários & Acesso</h4><p>Perfis e permissões por módulo, com auditoria de operações.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="1"><span class="mic">🗓️</span><h4>Agenda & Follow-up</h4><p>Tarefas internas e acompanhamento de clientes.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="2"><span class="mic">↩️</span><h4>Devoluções</h4><p>Devolução de venda e compra com impacto fiscal e financeiro.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="3"><span class="mic">☁️</span><h4>Migração para nuvem</h4><p>Banco atual movido com segurança para o Azure SQL.</p><span class="badge mvp">MVP</span></div>
-        <div class="mod" data-reveal data-delay="4"><span class="mic">🛍️</span><h4>Mercado Livre</h4><p>Importação de vendas e baixa de estoque automática.</p><span class="badge f2">Fase 2</span></div>
+        <div class="mod" data-reveal data-delay="1" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg></span>
+          <h4>Produtos &amp; Estoque</h4><p>Cadastro, similares, kits, localização e alerta de estoque mínimo.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="1" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></span>
+          <h4>NF-e</h4><p>Emissão de nota fiscal integrada à SEFAZ, com carta de correção.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="2" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.5l2.2 12.2a1.5 1.5 0 0 0 1.5 1.3h8.6a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/></svg></span>
+          <h4>Pedidos &amp; Vendas</h4><p>Orçamento, pedido, separação, faturamento e envio parcial.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="2" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="13" rx="2"/><path d="M16 12h2M2.5 10h19"/></svg></span>
+          <h4>Financeiro</h4><p>Contas a pagar e receber, fluxo de caixa e fechamento.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="3" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h11v11H2zM13 8h4l4 4v3h-8z"/><circle cx="6" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span>
+          <h4>Compras &amp; Entradas</h4><p>Requisição, processo de compra e entrada de mercadoria.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="3" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6M5 10v8h14v-8M3 21h18M9 14h6"/></svg></span>
+          <h4>Boleto &amp; Cheques</h4><p>Geração de boleto e controle de cheques recebidos e emitidos.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="4" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M7 15l3.5-4 3 2.5L20 7"/></svg></span>
+          <h4>DRE Gerencial</h4><p>Resultado por período, agrupado pelo seu plano de contas.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="4" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></span>
+          <h4>Usuários &amp; Acesso</h4><p>Perfis e permissões por módulo, com auditoria de operações.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="1" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4M8 14l2.5 2.5L16 12"/></svg></span>
+          <h4>Agenda &amp; Follow-up</h4><p>Tarefas internas e acompanhamento de clientes.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="2" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 9a9 9 0 0 0-15-3L3 9M3 9V4M3 9h5"/><path d="M3 15a9 9 0 0 0 15 3l3-3M21 15v5M21 15h-5"/></svg></span>
+          <h4>Devoluções</h4><p>Devolução de venda e compra com impacto fiscal e financeiro.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="3" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1 0-8 6 6 0 0 1 11.5-1.5A4.5 4.5 0 0 1 18 18Z"/><path d="M12 13v6M9.5 15.5 12 13l2.5 2.5"/></svg></span>
+          <h4>Migração para nuvem</h4><p>Banco atual movido com segurança para o Azure SQL.</p><span class="badge mvp">MVP</span>
+        </div>
+        <div class="mod" data-reveal data-delay="4" data-tilt>
+          <span class="mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l-1.2 11a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
+          <h4>Mercado Livre</h4><p>Importação de vendas e baixa de estoque automática.</p><span class="badge f2">Fase 2</span>
+        </div>
       </div>
     </div>
   </section>
