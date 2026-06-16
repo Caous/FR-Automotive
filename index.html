@@ -193,9 +193,72 @@
   <section class="section-pad" id="sistema">
     <div class="wrap">
       <div class="section-head" data-reveal>
-        <span class="eyebrow">Uma prévia</span>
-        <h2>No computador da loja ou no celular, do mesmo jeito.</h2>
-        <p>Interface limpa, rápida e pensada para quem usa o sistema o dia inteiro. Acesse pelo navegador — sem instalar nada.</p>
+        <span class="eyebrow">Uma prévia do sistema</span>
+        <h2>Cada pedido na sua coluna. Ninguém perde o que está acontecendo.</h2>
+        <p>O quadro de pedidos mostra a ordem caminhando da criação até a conferência — arraste o card e a etapa muda para todo mundo, na hora. A mesma operação roda no computador da loja e no celular, pelo navegador, sem instalar nada.</p>
+      </div>
+
+      <!-- Kanban de pedidos -->
+      <div class="kanban-wrap" data-reveal>
+        <div class="browser browser-flat">
+          <div class="browser-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="url">app.innovasfera.com.br/pedidos/quadro</span>
+            <span class="bar-live"><span class="dotmini"></span>4 em andamento</span>
+          </div>
+          <div class="kanban">
+            <!-- Col 1 -->
+            <div class="kcol">
+              <div class="kcol-head"><span class="kstage s1"></span>Ordem criada<span class="kcount">2</span></div>
+              <div class="kcard">
+                <div class="kc-top"><span class="kc-id">#2048</span><span class="kc-tag new">Novo</span></div>
+                <div class="kc-cli">Auto Peças Silva</div>
+                <div class="kc-items">3 itens · pastilha, disco, fluido</div>
+                <div class="kc-foot"><span class="kc-val">R$ 1.240</span><span class="kc-who">MS</span></div>
+              </div>
+              <div class="kcard">
+                <div class="kc-top"><span class="kc-id">#2049</span><span class="kc-tag new">Novo</span></div>
+                <div class="kc-cli">Diesel &amp; Cia</div>
+                <div class="kc-items">1 item · bomba injetora</div>
+                <div class="kc-foot"><span class="kc-val">R$ 640</span><span class="kc-who">RT</span></div>
+              </div>
+            </div>
+            <!-- Col 2 -->
+            <div class="kcol">
+              <div class="kcol-head"><span class="kstage s2"></span>Ordem aprovada<span class="kcount">1</span></div>
+              <div class="kcard">
+                <div class="kc-top"><span class="kc-id">#2045</span><span class="kc-tag ok">Aprovado</span></div>
+                <div class="kc-cli">Mecânica Central</div>
+                <div class="kc-items">5 itens · kit revisão completa</div>
+                <div class="kc-bar"><span style="width:35%"></span></div>
+                <div class="kc-foot"><span class="kc-val">R$ 2.115</span><span class="kc-who">AN</span></div>
+              </div>
+            </div>
+            <!-- Col 3 -->
+            <div class="kcol">
+              <div class="kcol-head"><span class="kstage s3"></span>Separação no estoque<span class="kcount">1</span></div>
+              <div class="kcard drag">
+                <div class="kc-top"><span class="kc-id">#2043</span><span class="kc-tag work">Separando</span></div>
+                <div class="kc-cli">Oficina do João</div>
+                <div class="kc-items">2 de 4 itens separados</div>
+                <div class="kc-bar"><span style="width:50%"></span></div>
+                <div class="kc-foot"><span class="kc-val">R$ 880</span><span class="kc-who">CL</span></div>
+              </div>
+            </div>
+            <!-- Col 4 -->
+            <div class="kcol">
+              <div class="kcol-head"><span class="kstage s4"></span>Conferência<span class="kcount">1</span></div>
+              <div class="kcard">
+                <div class="kc-top"><span class="kc-id">#2041</span><span class="kc-tag done">Conferindo</span></div>
+                <div class="kc-cli">Transportes Boa Vista</div>
+                <div class="kc-items">8 itens · conferir antes de faturar</div>
+                <div class="kc-bar"><span style="width:88%"></span></div>
+                <div class="kc-foot"><span class="kc-val">R$ 3.410</span><span class="kc-who">MS</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mock-cap">Quadro de pedidos — da criação à conferência, em tempo real para toda a equipe.</p>
       </div>
       <div class="mock-wrap">
         <!-- Desktop -->

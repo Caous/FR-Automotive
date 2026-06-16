@@ -365,6 +365,56 @@ section { position: relative; }
 .badge.mvp { background: var(--navy); color: var(--lime); }
 .badge.f2 { background: rgba(15,25,58,0.07); color: rgba(15,25,58,0.55); }
 
+/* ---------- Kanban ---------- */
+.kanban-wrap { margin-bottom: 70px; }
+.browser-flat { transform: none !important; transform-origin: center; }
+.bar-live {
+  margin-left: auto; display: flex; align-items: center; gap: 7px;
+  font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--ink-70);
+}
+.bar-live .dotmini { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 9px var(--lime); animation: blink 1.6s ease-in-out infinite; }
+.kanban {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+  padding: 18px; background: #0a1129;
+}
+.kcol { background: rgba(255,255,255,0.015); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.kcol-head {
+  display: flex; align-items: center; gap: 8px;
+  font-family: 'Space Grotesk', sans-serif; font-size: 0.82rem; font-weight: 600;
+  color: var(--cream); margin-bottom: 12px;
+}
+.kstage { width: 9px; height: 9px; border-radius: 3px; flex: none; }
+.kstage.s1 { background: #6b7da6; }
+.kstage.s2 { background: #4ea8de; }
+.kstage.s3 { background: #febc2e; }
+.kstage.s4 { background: var(--lime); box-shadow: 0 0 10px rgba(162,239,27,0.6); }
+.kcount {
+  margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.66rem;
+  color: var(--ink-45); background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 100px;
+}
+.kcard {
+  background: #0e1838; border: 1px solid var(--line); border-radius: 10px;
+  padding: 13px; margin-bottom: 10px;
+  transition: transform 0.25s var(--ease), border-color 0.25s, box-shadow 0.25s;
+}
+.kcard:last-child { margin-bottom: 0; }
+.kcard:hover { transform: translateY(-3px); border-color: rgba(162,239,27,0.4); box-shadow: 0 12px 26px rgba(0,0,0,0.4); }
+.kcard.drag { border-color: var(--lime); box-shadow: 0 16px 34px rgba(0,0,0,0.5); transform: rotate(-1.4deg) translateY(-2px); }
+.kc-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.kc-id { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--ink-45); }
+.kc-tag { font-size: 0.6rem; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 100px; }
+.kc-tag.new { background: rgba(107,125,166,0.2); color: #aebbd6; }
+.kc-tag.ok { background: rgba(78,168,222,0.18); color: #8fd0f2; }
+.kc-tag.work { background: rgba(254,188,46,0.18); color: #febc2e; }
+.kc-tag.done { background: rgba(162,239,27,0.18); color: var(--lime); }
+.kc-cli { font-family: 'Space Grotesk', sans-serif; font-size: 0.92rem; font-weight: 500; color: var(--cream); margin-bottom: 3px; }
+.kc-items { font-size: 0.74rem; color: var(--ink-45); margin-bottom: 10px; }
+.kc-bar { height: 4px; border-radius: 100px; background: rgba(255,255,255,0.07); margin-bottom: 11px; overflow: hidden; }
+.kc-bar span { display: block; height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--lime-dim), var(--lime)); }
+.kc-foot { display: flex; justify-content: space-between; align-items: center; }
+.kc-val { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: var(--lime); }
+.kc-who { width: 24px; height: 24px; border-radius: 50%; background: var(--navy-soft); border: 1px solid var(--line); display: grid; place-items: center; font-size: 0.62rem; font-family: 'JetBrains Mono', monospace; color: var(--ink-70); }
+
 /* ---------- Mockups ---------- */
 .mock-wrap { display: grid; grid-template-columns: 1.55fr 1fr; gap: 40px; align-items: end; perspective: 1600px; }
 
@@ -567,6 +617,7 @@ section { position: relative; }
   .problem-grid { grid-template-columns: 1fr; }
   .mods { grid-template-columns: repeat(2, 1fr); }
   .mock-wrap { grid-template-columns: 1fr; gap: 60px; }
+  .kanban { grid-template-columns: repeat(4, minmax(180px, 1fr)); overflow-x: auto; }
   .price-grid { grid-template-columns: 1fr; }
   .why-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-top { grid-template-columns: 1fr 1fr; }
